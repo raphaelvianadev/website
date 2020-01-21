@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr" data-version-tag="?20190424T200841Z">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="application-name" content="mat5" />
+  <meta name="theme-color" content="#2B5797" />
+
+  <script defer src="assets/js/pt.js"></script>
+  <script defer src="assets/js/app.js"></script>
+
+  <link rel="canonical" href="sistemas.html" />
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="" />
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+  <title>Sistemas lineres</title>
+</head>
+<body>
+<header id="header">
+  <center>
+    <a id="logo" href="https://raphaelfury.com.br/">raphitas-calculator</a>
+  </center>
+</header>
+
+<div id="bigtable">
+  <div id="left">
+    <center>
+      <nav class="menu">
+      <a href="index.html">Calcular determinante</a>
+      <a href="sistemas.html">Calcular sistemas lineares</a>
+      </nav>
+    </center>
+  </div>
+
+<div id="right">
+<main>
+  <center>
+  <form class="main-form">
+  <fieldset>
+    <center>
+    <legend>Sistema linear:</legend>
+    <div class="insert-table textarea matrix-table" data-id="A" data-sizes="4x5" data-type="system"></div>
+      </center>
+  </fieldset>
+  <div class="bbox slu-buttons">
+
+    <div><button type="button" class="expression-button" data-expression="solve-using-Cramer's-rule A">Regra de Cramer</button></div>
+    <div><button type="button" class="expression-button" data-expression="escalonamento A">Escalonamento</button></div>
+  </div>
+  </form>
+</center>
+<div class="line">
+  <div>
+    <div class="text-align-right">
+      <button type="button" class="clear-all-button">Limpar tudo</button>
+    </div>
+  </div>
+</div>
+  <center>
+<section id="resdiv" aria-live="polite"></section>
+  </center>
+
+</main>
+<div class="from-cookie"></div>
+
+<template id="insert-table-template" hidden>
+  <div data-for="NAME" tabindex="0">
+    <table role="table">
+      <tbody></tbody>
+    </table>
+    <div class="textarea-container">
+      <span class="a-input">
+        <textarea id="TEXTAREA_NAME"
+                  name="TEXTAREA_NAME"
+                  wrap="off"
+                  autocapitalize="off"
+                  autocomplete="off"
+                  inputmode="numbersAndPunctuation"
+                  spellcheck="false"
+                  class="matrix-table-textarea unfocused-placeholder"
+                  placeholder="x + y + z = 6&#x0A;3x + 2y -z = 4&#x0A;5x -4y + 3z = 6"><!--
+        --></textarea>
+      </span>
+    </div>
+  </div>
+  <div class="div-nowrap">
+    <button type="button" aria-pressed="mixed" class="swap-mode-button" hidden>Blocos</button><!--
+    --><button type="button" class="clear-table-button" data-for="NAME">Limpar valores</button><!--
+    --><button type="button" class="increment-size-button resize-table-button" data-for="NAME" data-inc="+1" hidden>+</button><!--
+    --><button type="button" class="decrement-size-button resize-table-button" data-for="NAME" data-inc="-1" hidden>&minus;</button>
+  </div>
+</template>
+
+<template id="insert-buttons-template" hidden>
+  <div class="insert-buttons">
+    <div><button type="button" class="clear-button" data-act-history-id="">Limpar</button></div>
+  </div>
+</template>
+
+
+</div>
+</div>
+
+</body>
+
+</html>
