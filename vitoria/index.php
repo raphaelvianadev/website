@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="shortcut icon" href="https://i.ya-webdesign.com/images/heart-favicon-png-2.png" />
+        <link rel="stylesheet" href="css/stylesheet.css">
+		<script src="js/timezz.js"></script>
+    </head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <body bgcolor="#000000">
+        <title>Tá quase...</title>
+        <meta name="description" content="background">
+            <div class="contain">
+			<img src="https://image.flaticon.com/icons/png/512/1530/1530900.png" id="logo" style="margin: 5% auto 0 auto;display:block; width:30%;">
+				<div class="timer j-first-timer"></div>
+            </div>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;effect=anaglyph" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+        <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script>
+			const timer = new TimezZ('.j-first-timer', {
+			  date: 'Feb 03, 2020 20:23:00',
+			  text: {
+				days: ' d',
+				hours: ' h',
+				minutes: ' min',
+				seconds: ' s',
+			  },
+			  canContinue: false,
+			  template: '<h2><span class=\"font-effect-anaglyph\">NUMBER</span><i class=\"font-effect-anaglyph\">LETTER</i></h2>',
+			  
+			  finished() {
+				window.location.replace("http://localhost/inicio");
+			  },
+			  
+			});
+		</script>
+</html>
+
