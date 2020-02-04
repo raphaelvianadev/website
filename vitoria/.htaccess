@@ -10,10 +10,10 @@ RewriteEngine On
     RewriteRule ^(.*)/$ /$1 [L,R=301]
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^vitoria/inicio$ index_final.html [NC,L]
-    RewriteRule ^vitoria/inicio/$ index_final.html [NC,L]
-	RewriteRule ^vitoria/bonus$ bonus.html [NC,L]
-    RewriteRule ^vitoria/bonus/$ bonus.html [NC,L]
+    RewriteRule ^inicio$ index_final.html [NC,L]
+    RewriteRule ^inicio/$ index_final.html [NC,L]
+	RewriteRule ^bonus$ bonus.html [NC,L]
+    RewriteRule ^bonus/$ bonus.html [NC,L]
 
 </IfModule>
 
